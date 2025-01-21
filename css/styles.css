@@ -11021,7 +11021,6 @@ footer.footer .social-link:hover {
 }
 .masthead h1, .masthead .h1 {
   font-size: 4rem;
-  margin: ;
   padding: 0;
 }
 @media (min-width: 992px) {
@@ -11032,6 +11031,7 @@ footer.footer .social-link:hover {
     font-size: 5.5rem;
   }
 }
+
 
 
 .portfolio-item {
