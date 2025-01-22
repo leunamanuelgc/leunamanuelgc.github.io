@@ -41,7 +41,7 @@
   --bs-warning: #ecb807;
   --bs-danger: #dc3545;
   --bs-light: #c8fff0;
-  --bs-dark: #212529;
+  --bs-dark: #00283c;
   --bs-primary-rgb: 00, 120, 136;
   --bs-secondary-rgb: 00, 40, 60;
   --bs-success-rgb: 25, 135, 84;
@@ -10972,6 +10972,7 @@ html {
 }
 
 footer.footer {
+  background-color: #c8fff0;
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
@@ -10982,7 +10983,7 @@ footer.footer .social-link {
   width: 4rem;
   line-height: 4.3rem;
   font-size: 1.5rem;
-  background-color: #1D809F;
+  background-color: #00283c;
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
@@ -11161,4 +11162,8 @@ footer.footer .social-link:hover {
   line-height: 7.5rem;
   font-size: 2.25rem;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.font{
+  font-family:var(--bs-font-monospace);
 }
