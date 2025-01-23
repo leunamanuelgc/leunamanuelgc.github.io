@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
+        <meta name="description" content="Personal website" />
+        <meta name="author" content="Manuel Gutiérrez" />
         <title>Manuel Gutiérrez</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
@@ -16,18 +16,19 @@
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
         <nav id="sidebar-wrapper">
             <ul class="sidebar-nav">
-                <li class="sidebar-brand"><a href="#page-top">Start Bootstrap</a></li>
-                <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
-                <li class="sidebar-nav-item"><a href="#about">About</a></li>
-                <li class="sidebar-nav-item"><a href="#skills">Skills</a></li>
-                <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
-                <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
+                <li class="sidebar-brand"><a href="#page-top">leunamanuelgc</a></li>
+                <!-- <li class="sidebar-nav-item"><a href="#page-top">Home</a></li> -->
+                <li class="sidebar-nav-item"><a href="#page-top">About me</a></li>
+                <li class="sidebar-nav-item"><a href="#skills">My skills</a></li>
+                <li class="sidebar-nav-item"><a href="#portfolio">My projects</a></li>
+                <li class="sidebar-nav-item"><a href="#contact">Contact me</a></li>
             </ul>
         </nav>
         <!-- Header-->
@@ -263,31 +264,15 @@
                     </li>
                 </ul>
                 
-                <a class="btn btn-dark btn-xl lead mb-4"><i class="icon-link"></i>
-                    <i class="font" value="leunamanuelgc@gmail.com" id="copy">
+                <a class="btn btn-dark btn-xl lead mb-4 copy" data-copy=".e-mail">
+                    <i class="icon-envelope-open copy-icon"></i>
+                    <span class="font copy-label e-mail">
                         leunamanuelgc@gmail.com
-                    </i>
+                    </span>
                 </a>
                 <p class="text-muted small mb-0">Copyright &copy; leunamanuelgc 2025</p>
             </div>
         </footer>
-        <!-- Copiar a portapapeles -->
-        <script>
-            function copyToClipboard() {
-              var copyText = document.getElementById("copy");
-              copyText.select();
-              copyText.setSelectionRange(0, 99999);
-              navigator.clipboard.writeText(copyText.value);
-              
-              var tooltip = document.getElementById("copy");
-              tooltip.innerHTML = "Copied: " + copyText.value;
-            }
-            
-            function outFunc() {
-              var tooltip = document.getElementById("myTooltip");
-              tooltip.innerHTML = "Copy to clipboard";
-            }
-        </script>
 
         <!-- Scroll to Top Button-->
         <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
