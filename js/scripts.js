@@ -81,25 +81,29 @@ function fadeIn(el, display) {
 
 // Copy To Clipboard
 document.querySelectorAll(".copy").forEach(copyButton =>{
+    let timeoutId = null;
+    // Almacena el texto original del botón al cargar la página
+    const label = copyButton.querySelector(".copy-label");
+    const originalText = label ? label.textContent : "";
+
     copyButton.addEventListener("click",() =>{
         const targetElement = document.querySelector(copyButton.dataset.copy);
         const textToCopy = targetElement.textContent
             .replace(/\s+/g, " ")
             .trim();
-        console.log(targetElement);
 
         navigator.clipboard.writeText(textToCopy).then(() => {
-            const label = copyButton.querySelector(".copy-label");
-            const originalText = label.textContent;
-
+            if (timeoutId) {
+                clearTimeout(timeoutId);
+            }
             copyButton.disabled = true;
             label.textContent = "Copied!";
-            
-            setTimeout(()=>{
+
+            timeoutId = setTimeout(()=>{
                 copyButton.disabled = false;
                 label.textContent = originalText;
-            }, 1000);
-        });
-        
+                timeoutId = null;
+            }, 500);
+        });  
     })
 })
